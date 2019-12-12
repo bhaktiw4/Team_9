@@ -1,0 +1,35 @@
+<html>
+  <head>
+
+
+  </head>
+ <body>
+    <form onsubmit=" return myfun()" action="Welcome.html">
+       Username:<input type="text" id=p001  name="uname"><br>
+       Password:<input type="text" id=p002 name=pwd><br>
+       <button type="submit">submit</button>
+    </form>
+ 
+
+  
+
+ </body>
+</html>
+<script>
+    function myfun(){
+      var a=document.getElementById("p001");
+      var b=document.getElementById("p002");
+     // document.write(a+b);
+     if(a.value =="" !! b.value=="")
+     {
+         alert("no blank values allowed");
+         return false;
+     }else{
+
+         return true;
+     }
+
+    }    
+      
+    
+</script>
